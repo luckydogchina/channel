@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "channel",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "channel.cpp",
+                "channel_test.cpp",
+                "CTLogEx/CTLogEx.cpp",
+                "CTLogEx/tinyxml2.cpp",
+                "-o",
+                "channel.exe",
+                "-lpthread",
+                "-D",
+                "UNIX",
+                "-D",
+                "_DEBUG",
+                "-U",
+                "WIN32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

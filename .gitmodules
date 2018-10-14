@@ -1,0 +1,3 @@
+[submodule "CTLogEx"]
+	path = CTLogEx
+	url = https://github.com/luckydogchina/CTLogEx.git
